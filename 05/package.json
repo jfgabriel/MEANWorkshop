@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "name": "05",
+  "description": "Implementar una aplicación 'Hello World' con un servidor web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

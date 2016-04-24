@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "name": "06",
+  "description": "Implementar un servidor web que devuelva archivos estáticos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

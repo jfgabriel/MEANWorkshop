@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "name": "08",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Introducción a una aplicación que permite agregar o quitar personas a una lista de alumnos. Debe incluir nombre, apellido y fecha de nacimiento"
+}

@@ -1,0 +1,17 @@
+BODY {
+    background: #E9F2F9;
+    color: #3C8DC5;
+    font-family: 'Arial'
+}
+
+LABEL {
+    color: #6FB7E9;
+    display: block;
+    margin-top: 20px;
+}
+
+DIV{
+  background: #B2D1E5;
+  padding: 20px;
+  margin-top: 20px;
+}

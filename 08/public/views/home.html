@@ -1,0 +1,11 @@
+<h1>Esta es la página de inicio</h1>
+
+<label>¿Cómo es tu nombre?</label>
+<input type=text ng-model="nombre">
+<label>¿Cuál es tu edad?</label>
+<input type=number ng-model="edad">
+
+<div ng-show="nombre && edad">
+    <h3>¡Bienvenido, {{ nombre }}!</h3>
+    <h4>Hoy es el día {{ hoy | date:'dd/mm/yyyy' }} y el año que viene tendrás {{ calcularEdad() }} años</h4>
+</div>
