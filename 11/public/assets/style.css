@@ -1,0 +1,53 @@
+/*Tweaks generales */
+.row {
+    margin-bottom: 10px;
+}
+
+
+/* Define la clase post-grid */
+
+ul.post-grid {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul.post-grid li {
+    padding: 20px;
+    cursor: pointer;
+    transition: background linear 0.2s;
+    border-bottom: 1px solid #3a8bab;
+    float: left;
+    width: 33%;
+    height: 300px;
+}
+ul.post-grid li:hover {
+    background: #3a8bab;
+    color: white;
+}
+ul.post-grid li:hover h3 {
+    color: white;
+}
+.post {
+    -webkit-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+    opacity: 1;
+    padding-bottom: 30px;
+}
+.comments ul {
+    margin: 0;
+    padding: 0;
+}
+.comments ul li {
+    list-style-type: none;
+    padding: 20px 5px;
+    border-bottom: 1px #79B9D2 solid;
+}
+img {
+    max-width: 100%;
+}
+
+/* Validación para formularios */
+
+INPUT.ng-invalid.ng-dirty {
+    box-shadow: 2px 0px 10px 0px rgba(235, 7, 7, 1);
+}

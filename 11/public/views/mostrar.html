@@ -1,0 +1,25 @@
+<h1>{{post.titulo}}</h1>
+<img src="{{post.imagen}}" ng-show="post.imagen" />
+<h4>
+    {{post.texto}}
+</h4>
+
+<!-- Para agregar un like -->
+<button class="btn btn-lg btn-danger" ng-click="agregarLike()">&#9829; {{post.likes}}</button>
+
+<!-- Comentarios -->
+<h3>Comentarios</h3>
+<!-- IMPLEMENTAR MOSTRAR COMENTARIOS -->
+
+<!-- Formulario para comentar -->
+<form name="commentForm" ng-submit="commentForm.$valid && commentCtrl.addComment(post)" novalidate>
+    <h4>Agregar comentario</h4>
+
+    <!-- IMPLEMENTAR FORMULARIO  -->
+
+    <div class="row">
+        <div class="col-sm-12">
+            <button ng-show="commentForm.$valid" class="btn btn-primary" ng-click="agregarComentario()">Enviar comentario</button>
+        </div>
+    </div>
+</form>

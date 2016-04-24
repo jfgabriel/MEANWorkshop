@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Este tag es requerido para angular-route -->
+    <base href="/">
+
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="public/assets/style.css" rel="stylesheet">
+
+    <!-- Carga librerias -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+
+    <!-- Carga aplicación, controladores, servicios, etc. -->
+    <script src="public/app.js"></script>
+    <script src="public/services/postsService.js"></script>
+    <script src="public/controllers/HomeController.js"></script>
+    <script src="public/controllers/BuscarController.js"></script>
+    <script src="public/controllers/MostrarController.js"></script>
+    <script src="public/controllers/NuevoController.js"></script>
+</head>
+
+<body ng-app="app">
+    <!-- Menú principal de la aplicación -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Mundo Gatuno</a></div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Todos los posts</a></li>
+                    <li><a href="nuevo">Crear uno nuevo</a></li>
+                    <li><a href="buscar">Buscar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- // Los partials deben estar contenidos dentro de un div.container -->
+    <div class="container">
+        <!-- Utiliza la directa ng-view para indicar dónde van a renderease las vistas (partials) -->
+        <ng-view></ng-view>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<ul class="post-grid">
+    <li ng-repeat="item in posts" ng-click="mostrarPost(item._id)">
+        <h2>{{item.titulo}}</h2>
+        <h4>{{item.descripcion}}...</h4>
+        <h2>
+          <div class="pull-left">&#9998; {{item.comentarios.length}}</div>
+          <div class="pull-right">&#9829; {{item.likes}}</div>
+        </h2>
+    </li>
+</ul>
