@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Este tag es requerido para angular-route -->
+    <base href="/">
+
+    <link href="public/assets/style.css" rel="stylesheet">
+
+    <!-- Carga librerias -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+
+    <!-- Carga aplicación, controladores, servicios, etc. -->
+    <script src="public/app.js"></script>
+    <script src="public/controllers/HomeController.js"></script>
+    <script src="public/controllers/AlumnosController.js"></script>
+</head>
+
+<body ng-app="app">
+    <!-- Utiliza la directa ng-view para indicar dónde van a renderease las vistas (partials) -->
+    <ng-view></ng-view>
+</body>
+
+</html>

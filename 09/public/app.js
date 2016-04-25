@@ -11,8 +11,4 @@ angular.module('app', ['ngRoute'])
                 templateUrl: 'public/views/home.html',
                 controller: 'HomeController'
             })
-            .when('/alumnos', {
-                templateUrl: 'public/views/alumnos.html',
-                controller: 'AlumnosController'
-            })
     });

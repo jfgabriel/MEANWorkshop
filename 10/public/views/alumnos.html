@@ -1,0 +1,34 @@
+<h1>Listado de alumnos</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in lista">
+            <td>
+                {{item.nombre}}
+            </td>
+            <td>
+                {{item.apellido}}
+            </td>
+            <td>
+                {{item.edad}}
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">
+                <form>
+                    <!-- Implementar inputs -->
+                    <!-- Implementar button con directiva ng-click -->
+                </form>
+            </td>
+        </tr>
+    </table>
