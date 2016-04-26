@@ -1,0 +1,33 @@
+<h1>{{post.titulo}}</h1>
+<img src="{{post.imagen}}" ng-show="post.imagen" />
+<h4>
+    {{post.texto}}
+</h4>
+
+<!-- Para agregar un like -->
+<button class="btn btn-lg btn-danger" ng-click="agregarLike()">&#9829; {{post.likes}}</button>
+
+<!-- Comentarios -->
+<h3>Comentarios</h3>
+<ul>
+    <li ng-repeat="item in post.comentarios"><strong>De {{ item.autor}}</strong>: {{item.texto}}</li>
+</ul>
+<br><br>
+
+<!-- Formulario para comentar -->
+<form name="commentForm" novalidate>
+    <h4>Agregar comentario</h4>
+    <div class="row">
+        <div class="col-sm-6">
+            <input type="text" placeholder="Escribí tu comentario" class="form-control" ng-model="nuevoComentario.texto" ng-required="true">
+        </div>
+        <div class="col-sm-6">
+            <input type="text" placeholder="Tu nombre" class="form-control" ng-model="nuevoComentario.autor" ng-required="true">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button ng-show="commentForm.$valid" class="btn btn-primary" ng-click="agregarComentario()">Enviar comentario</button>
+        </div>
+    </div>
+</form>

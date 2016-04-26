@@ -1,0 +1,19 @@
+{
+    "name": "04",
+    "main": "index.js",
+    "description": "Implementar el blog Mundo Gatuno con MongoDB",
+    "license": "ISC",
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "^1.5.5",
+        "angular-route": "^1.5.5",
+        "bootstrap": "^3.3.6"
+    }
+}
